@@ -1,0 +1,35 @@
+
+name: Wimmel
+title: Wimmel | Geo Design Innovation
+keywords:
+  - geo
+  - design
+  - projects
+  - complexity
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.wimmel.nl" # the base hostname & protocol for your site, e.g. http://example.com
+
+# contact info
+email: willem@wimmel.nl
+phone: "+31634587395"
+phone-readable: "+316 345 87 395"
+# whatsapp: https://wa.me/message/4ORGM7J4ENYJC1
+# facebook: https://facebook.com/VakantiewoningAlbir
+
+# Build settings
+markdown: kramdown
+# theme: minima
+# plugins:
+#   - jekyll-minifier
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
