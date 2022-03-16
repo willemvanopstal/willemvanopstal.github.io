@@ -135,7 +135,7 @@ $(function() {
 			return p[0] + "," + p[1]
 		}).join(" L")
 
-		$('path').each(function() {
+		$('.wave path').each(function() {
 			$(this).attr('d', path);
 		})
 

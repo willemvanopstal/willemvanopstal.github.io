@@ -116,7 +116,21 @@ h4 {
 .header-brand {
 	height: 50px;
 	/* height: 1rem; */
-	display: block
+	display: block;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3e3e3e;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(.33,.66,.66,1);
+}
+
+.header-brand:hover {
+  text-decoration: none;
+  color: #93b1af;
+  transition: 0.3s cubic-bezier(.33,.66,.66,1);
+
 }
 
 .header-brand>img {
@@ -386,7 +400,7 @@ p a:focus {
 }
 
 .cover-bg-div {
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   background-color: white;
   box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
 }
@@ -429,6 +443,87 @@ p .emph {
   font-weight: 600;
 }
 
+.sections-nav-info a {
+  color: #d5674c;
+  color: #859e80;
+}
+
+
+
+@media (min-width: 992px) {
+  .themes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 66px 66px;
+  }
+}
+
+@media (max-width: 992px) {
+  .themes-item {
+    margin-top: 50px;
+  }
+}
+
+.themes-item {
+  position: relative;
+  /* padding: 1.4em; */
+  /* border-radius: 6px; */
+  background-color: #fff6f0;
+}
+
+.themes-item p {
+  padding: 1.4em;
+  padding-top: 0px;
+}
+
+.themes-item h4 {
+  padding-left: 1.4rem;
+}
+
+.themes-item p:last-child {
+  margin-bottom: 0px;
+}
+
+.theme-image {
+  height: 240px;
+}
+
+.coloured-border-green {
+  width: 100%;
+  border-bottom: 6px solid #859e80;
+  margin-bottom: 1.4rem;
+}
+
+.coloured-border-yellow {
+  width: 100%;
+  border-bottom: 6px solid #f9d780;
+  margin-bottom: 1.4rem;
+}
+
+.coloured-border-blue {
+  width: 100%;
+  border-bottom: 6px solid #93b1af;
+  margin-bottom: 1.4rem;
+}
+
+.coloured-border-red {
+  width: 100%;
+  border-bottom: 6px solid #7f4134;
+  margin-bottom: 1.4rem;
+}
+
+.coloured-border-orange {
+  width: 100%;
+  border-bottom: 6px solid #d5674c;
+  margin-bottom: 1.4rem;
+}
+
+.coloured-border-gray {
+  width: 100%;
+  border-bottom: 6px solid #5b5f60;
+  margin-bottom: 1.4rem;
+}
+
 @media (min-width: 1101px) {
   .features {
     display: grid;
@@ -448,7 +543,35 @@ p .emph {
   padding-left: 60px;
 }
 
-.mega-octicon {
+.sections-nav-info .icon {
+  width: 26px;
+  text-align: center;
+  border-radius: 2px;
+  /* background-color: #fff6f0; */
+  fill: #859e80;
+  margin-bottom: 3px;
+  margin-right: 1em;
+}
+
+.features-item .icon {
+  position: absolute;
+  top: -0.25em;
+  left: 0;
+  width: 1.75em;
+  height: 1.75em;
+  padding: 0.4em;
+  /* line-height: 1.75em; */
+  font-size: 24px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #fff6f0;
+}
+
+.features-item .icon path {
+  fill: #ee8239;
+}
+
+/* .mega-octicon {
   font: normal normal 32px 'octicons';
   line-height: 1;
   display: inline-block;
@@ -485,10 +608,14 @@ p .emph {
 
 .octicon-code:before {
     content: '\f05f';
+} */
+
+#over, #services {
+  margin-bottom: 4rem;
 }
 
-#over {
-  margin-bottom: 4rem;
+#themas {
+  margin-top: 10rem;
 }
 
 .coloured-spacer {
