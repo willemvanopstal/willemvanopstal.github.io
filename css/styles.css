@@ -22,10 +22,10 @@ red       #7f4134
   src: url('/css/brandon-grotesque/Brandon_blk.woff2') format('woff2');
 }
 
-@font-face {
+/* @font-face {
   font-family:'octicons';
   src: url("https://github-atom-io-herokuapp-com.freetls.fastly.net/assets/octicons/octicons/octicons-cc5c5a519a545518743243db9cbfd19cc01662693d4bea686c54d622b0944b0b.woff") format("woff");
-}
+} */
 
 body {
   font-family: 'Merriweather Sans', 'sans serif';
@@ -64,6 +64,14 @@ h4 {
 }
 
 .greyscale {
+  filter: grayscale(100%);
+}
+
+.greyscale-semi {
+  filter: grayscale(50%);
+}
+
+.desaturated {
   filter: grayscale(100%);
 }
 
@@ -405,6 +413,10 @@ p a:focus {
   box-shadow: 0px 0px 6px rgba(0,0,0,0.4);
 }
 
+.cover-bg-div h2 {
+  margin-bottom: 1.5rem;
+}
+
 .main-cover {
     position: relative;
     top: -10rem;
@@ -458,7 +470,7 @@ p .emph {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .themes-item {
     margin-top: 50px;
   }
@@ -469,6 +481,7 @@ p .emph {
   /* padding: 1.4em; */
   /* border-radius: 6px; */
   background-color: #fff6f0;
+  box-shadow: 0px 0px 15px rgb(0 0 0 / 5%);
 }
 
 .themes-item p {
@@ -484,8 +497,20 @@ p .emph {
   margin-bottom: 0px;
 }
 
+.wrapper {
+  overflow: hidden;
+}
 .theme-image {
   height: 240px;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.theme-image:hover {
+  height: 240px;
+  background-size: cover;
+  -webkit-transform: scale(1.05,1.05);
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .coloured-border-green {
@@ -524,7 +549,7 @@ p .emph {
   margin-bottom: 1.4rem;
 }
 
-@media (min-width: 1101px) {
+@media (min-width: 992px) {
   .features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -532,10 +557,36 @@ p .emph {
   }
 }
 
-@media (max-width: 1101px) {
+@media (max-width: 991px) {
   .features-item {
     margin-top: 50px;
   }
+}
+
+.themes-note {
+  position: relative;
+  padding-left: 60px;
+  padding-right: 1.4rem;
+  margin-top: 80px;
+}
+
+.themes-note .icon {
+  position: absolute;
+  top: -0.25em;
+  left: 0;
+  width: 1.75em;
+  height: 1.75em;
+  padding: 0.4em;
+  /* line-height: 1.75em; */
+  font-size: 24px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #fff6f0;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+}
+
+.themes-note .icon path {
+  fill: #ee8239;
 }
 
 .features-item {
@@ -565,6 +616,7 @@ p .emph {
   text-align: center;
   border-radius: 6px;
   background-color: #fff6f0;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
 }
 
 .features-item .icon path {
@@ -614,7 +666,7 @@ p .emph {
   margin-bottom: 4rem;
 }
 
-#themas {
+#themas, #contact {
   margin-top: 10rem;
 }
 
