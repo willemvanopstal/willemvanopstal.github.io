@@ -461,7 +461,6 @@ p .emph {
 }
 
 
-
 @media (min-width: 992px) {
   .themes {
     display: grid;
@@ -497,9 +496,10 @@ p .emph {
   margin-bottom: 0px;
 }
 
-.wrapper {
+.image-wrapper {
   overflow: hidden;
 }
+
 .theme-image {
   height: 240px;
   background-size: cover;
@@ -594,6 +594,38 @@ p .emph {
   padding-left: 60px;
 }
 
+.contact-list {
+  padding-left: 0.4rem;
+  margin-top: 2rem;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow: hidden;
+  list-style: none;
+}
+
+.contact-item {
+  padding-top: 0.4rem;
+}
+
+.contact-item a {
+  color: #d5674c;
+  color: #859e80;
+  color: #212529;
+}
+
+.contact-item .icon {
+  width: 26px;
+  text-align: cent8er;
+  border-radius: 2px;
+  /* background-color: #fff6f0; */
+  fill: #859e80;
+  margin-bottom: 3px;
+  margin-right: 1em;
+}
+
 .sections-nav-info .icon {
   width: 26px;
   text-align: center;
@@ -617,10 +649,12 @@ p .emph {
   border-radius: 6px;
   background-color: #fff6f0;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 6%);
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 .features-item .icon path {
   fill: #ee8239;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 /* .mega-octicon {
